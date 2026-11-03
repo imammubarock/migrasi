@@ -3,130 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemberitahuan Resmi - Pelayanan Desa Tegalsari</title>
+    <title>Pengumuman Resmi - Pemerintah Desa Tegalsari</title>
     
-    <!-- Meta Refresh otomatis setelah 7 detik -->
-    <meta http-equiv="refresh" content="7;url=https://pelayanan.tegalsari.id/">
+    <!-- Meta Refresh fallback jika JavaScript dimatikan (Akan mengalihkan dalam 4 detik) -->
+    <meta http-equiv="refresh" content="4;url=https://pelayanan.tegalsari.id">
     
-    <!-- Tailwind CSS v4 CDN -->
+    <!-- Tailwind CSS untuk styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts: Plus Jakarta Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom spinner animation */
+        .spinner {
+            border: 4px solid rgba(59, 130, 246, 0.1);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border-left-color: #3b82f6; /* Tailwind blue-500 */
+            animation: spin 1s ease infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between relative overflow-x-hidden selection:bg-blue-600 selection:text-white">
+<body class="bg-slate-50 min-h-screen flex flex-col justify-center items-center p-4">
 
-    <!-- Background Glow & Pattern Effects (Light Mode) -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-b from-blue-100/70 via-sky-50/40 to-transparent blur-3xl pointer-events-none"></div>
-
-    <!-- Header / Navbar -->
-    <header class="w-full py-6 px-6 max-w-6xl mx-auto flex justify-between items-center z-10">
-        <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-600/20">
-                <i class="fa-solid fa-landmark"></i>
-            </div>
-            <div>
-                <span class="block font-bold text-sm tracking-wider uppercase text-blue-600">Pemerintah Desa Tegalsari</span>
-                <span class="block font-extrabold text-lg tracking-tight text-slate-900">Kecamatan Tegalsari</span>
+    <!-- Kontainer Utama -->
+    <div class="bg-white max-w-lg w-full rounded-2xl shadow-lg border border-slate-100 p-8 md:p-10 text-center transform transition-all hover:shadow-xl">
+        
+        <!-- Ikon Instansi Pemerintahan (SVG) -->
+        <div class="flex justify-center mb-5">
+            <div class="bg-blue-50 text-blue-600 p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                </svg>
             </div>
         </div>
-        <div class="hidden sm:flex items-center space-x-2 text-xs font-medium bg-white border border-slate-200 px-3.5 py-1.5 rounded-full text-slate-600 shadow-sm">
-            <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-            <span>Portal Layanan Resmi</span>
+
+        <!-- Judul Pengumuman -->
+        <div class="text-sm font-bold text-blue-600 tracking-widest uppercase mb-2">
+            Pengumuman Resmi
         </div>
-    </header>
+        <h1 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4">
+            Pemerintah Desa Tegalsari
+        </h1>
+        
+        <!-- Pesan -->
+        <p class="text-slate-500 mb-8 leading-relaxed">
+            Layanan digital dan administrasi masyarakat kini telah bermigrasi. Anda sedang dialihkan ke portal pelayanan resmi <strong class="text-slate-700">pelayanan.tegalsari.id</strong>
+        </p>
 
-    <!-- Konten Utama Center -->
-    <main class="w-full max-w-2xl mx-auto px-6 py-6 z-10 flex-grow flex flex-col justify-center">
-        <div class="w-full bg-white border border-slate-200/90 rounded-3xl p-8 sm:p-10 shadow-xl shadow-slate-200/50 relative overflow-hidden text-center">
-            
-            <!-- Aksen Garis Atas Kartu -->
-            <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600"></div>
-
-            <!-- Ikon Animasi -->
-            <div class="relative w-20 h-20 mx-auto mb-5 flex items-center justify-center">
-                <div class="absolute inset-0 bg-blue-600/10 rounded-2xl animate-ping"></div>
-                <div class="relative w-20 h-20 bg-gradient-to-br from-blue-600 to-sky-600 rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg shadow-blue-600/25 border border-blue-400/30">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <!-- Badge Pemberitahuan -->
-            <div class="inline-flex items-center space-x-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider mb-3">
-                <i class="fa-solid fa-circle-info"></i>
-                <span>Pemberitahuan Pengalihan Domain</span>
-            </div>
-
-            <!-- Judul -->
-            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-3">
-                Pelayanan Desa Tegalsari Telah Berpindah
-            </h1>
-
-            <!-- Deskripsi -->
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
-                Untuk meningkatkan kecepatan, kemudahan, dan keamanan akses administrasi kependudukan serta pelayanan publik, sistem kami kini resmi beroperasi di alamat domain baru.
+        <!-- Spinner & Countdown -->
+        <div class="flex flex-col items-center justify-center mb-8 bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <div class="spinner mb-4"></div>
+            <p class="text-sm font-medium text-slate-600">
+                Memuat portal pelayanan dalam <span id="countdown" class="text-blue-600 font-bold text-lg">4</span> detik...
             </p>
-
-            <!-- Kotak Alamat URL Tujuan -->
-            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 mb-6 text-left transition hover:border-blue-300">
-                <div class="flex items-center justify-between mb-1">
-                    <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider flex items-center space-x-1.5">
-                        <i class="fa-solid fa-globe text-blue-600"></i>
-                        <span>Alamat Portal Baru:</span>
-                    </span>
-                    <span class="text-[10px] bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-mono font-medium">Domain Resmi</span>
-                </div>
-                <div class="flex items-center justify-between">
-                    <span class="text-blue-600 font-mono text-sm sm:text-base font-bold truncate mr-2">pelayanan.tegalsari.id</span>
-                    <a href="https://pelayanan.tegalsari.id" class="text-xs bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 px-3 py-1.5 rounded-lg transition flex items-center space-x-1 shrink-0 shadow-sm cursor-pointer">
-                        <i class="fa-solid fa-external-link text-slate-400 text-[10px]"></i>
-                        <span>Buka</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Tombol Aksi Utama -->
-            <div class="space-y-3 mb-6">
-                <a href="https://pelayanan.tegalsari.id" class="w-full bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-500 hover:to-sky-500 text-white font-bold py-3.5 px-6 rounded-2xl shadow-lg shadow-blue-600/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center space-x-2 text-center text-base cursor-pointer">
-                    <span>Akses Portal Layanan Sekarang</span>
-                    <i class="fa-solid fa-arrow-right text-sm"></i>
-                </a>
-            </div>
-
-            <!-- Indikator Hitung Mundur Interaktif -->
-            <div class="flex items-center justify-center space-x-2 text-xs text-slate-500">
-                <div class="w-4 h-4 border-2 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
-                <span>Pengalihan otomatis dalam <strong id="countdown" class="text-slate-800 font-bold text-sm">7</strong> detik...</span>
-            </div>
-
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="w-full py-6 px-6 max-w-6xl mx-auto text-center text-xs text-slate-500 z-10 border-t border-slate-200">
-        <p>&copy; 2026 Pemerintah Desa Tegalsari. Hak Cipta Dilindungi Undang-Undang.</p>
-    </footer>
+        <!-- Garis Pemisah -->
+        <div class="border-t border-slate-100 my-6"></div>
 
-    <!-- Skrip Hitung Mundur & Redirect Otomatis -->
+        <!-- Link Manual Fallback -->
+        <p class="text-sm text-slate-400 mb-4">
+            Klik tombol di bawah jika halaman tidak termuat otomatis:
+        </p>
+        <a href="https://pelayanan.tegalsari.id" 
+           class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors w-full sm:w-auto shadow-sm">
+            Buka Portal Pelayanan
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- Footer / Hak Cipta -->
+    <div class="mt-8 text-center text-sm text-slate-400">
+        &copy; <span id="year"></span> Pemerintah Desa Tegalsari.<br class="block sm:hidden"> Semua hak dilindungi.
+    </div>
+
+    <!-- Script Logika Pengalihan -->
     <script>
-        let timeLeft = 7;
-        const countdownEl = document.getElementById('countdown');
+        // Set tahun otomatis di footer
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-        const timer = setInterval(() => {
-            timeLeft--;
-            countdownEl.textContent = timeLeft;
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                window.location.href = "https://pelayanan.tegalsari.id";
+        // Konfigurasi Pengalihan
+        const targetUrl = "https://pelayanan.tegalsari.id";
+        let secondsLeft = 4; // Sedikit lebih lama agar pesan sempat terbaca
+        const countdownElement = document.getElementById('countdown');
+
+        // Fungsi Hitung Mundur
+        const countdownTimer = setInterval(() => {
+            secondsLeft--;
+            countdownElement.textContent = secondsLeft;
+
+            if (secondsLeft <= 0) {
+                clearInterval(countdownTimer);
+                // Lakukan pengalihan
+                window.location.replace(targetUrl);
             }
-        }, 1000);
+        }, 1000); // 1000 ms = 1 detik
     </script>
 </body>
 </html>
